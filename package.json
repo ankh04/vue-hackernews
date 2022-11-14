@@ -11,7 +11,8 @@
     "test:unit:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --no-cache --runInBand"
   },
   "dependencies": {
-    "firebase": "^5.0.4",
+    "firebase": "^7.21.1",
+    "fsevents": "^2.3.2",
     "vue": "^2.5.16"
   },
   "devDependencies": {
@@ -56,6 +57,7 @@
     "not ie <= 8"
   ],
   "jest": {
+    "testEnvironment": "jsdom",
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.vue$": "vue-jest"
